@@ -1,10 +1,11 @@
-FROM python:3.12-slim
+FROM python:3.14
 
-WORKDIR /app
+WORKDIR /code
 
-RUN pip install fastapi uvicorn
+COPY ./requirements.txt /code/requirements.txt
 
-COPY main.py .
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+COPY main.py /code/main.py
 
+CMD ["fastapi", "run", "main.py", "--port", "8000"]
