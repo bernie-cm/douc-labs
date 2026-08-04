@@ -4,3 +4,8 @@ __pycache__/
 .env
 .python-version
 uv.lock
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+crash.log
