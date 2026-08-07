@@ -44,6 +44,4 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
-        script_stop: true
-        script: |
-          /opt/app/deploy.sh ${{ github.sha }}
+        script: /opt/app/deploy.sh ${{ github.sha }}
