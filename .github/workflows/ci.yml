@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -35,8 +35,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-        
-  Deploy to EC2:
+
     - name: Deploy to EC2
       uses: appleboy/ssh-action@v1
       with:
