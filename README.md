@@ -6,3 +6,5 @@ The application will use GitHub Actions instead of the original setup of Jenkins
 - Set up a Jenkins multi branch pipeline and test it.
 
 - Testing the new branch on GitHub and multi branch pipeline scanning.
+
+Another test to assess how the GitHub actions workflow works.
