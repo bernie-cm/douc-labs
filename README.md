@@ -7,4 +7,4 @@ The application will use GitHub Actions instead of the original setup of Jenkins
 
 - Testing the new branch on GitHub and multi branch pipeline scanning.
 
-Another test to assess how the GitHub actions workflow works.
+Final test to try pushing to Docker Registry.
